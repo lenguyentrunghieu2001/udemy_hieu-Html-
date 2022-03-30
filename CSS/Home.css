@@ -1,0 +1,261 @@
+:root {
+  --font-family-bebas: "Bebas Neue", cursive;
+  --font-family-Helvetica: Helvetica, sans-serif;
+  --color474747: #474747;
+  --colorbdbdbd: #bdbdbd;
+  --color5f5f5f: #5f5f5f;
+  --color464646: #464646;
+  --width: 940px;
+  --margin: 30px auto 0px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header-background {
+  width: 100%;
+  height: 7px;
+  background-color: #ebebeb;
+}
+
+/* ========================
+    header
+======================== */
+
+header {
+  width: var(--width);
+  margin: var(--margin);
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 42px;
+  font-family: "Pacifico", cursive;
+  color: #474747;
+}
+
+.menunav {
+  font-family: var(--font-family-bebas);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 0px;
+}
+
+.menunav-item {
+  list-style: none;
+  padding: 0 25px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--colorbdbdbd);
+  transition: opacity 0.2s ease-out;
+}
+
+.menunav-item:hover {
+  opacity: 0.7;
+}
+
+.menunav-item a {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--color474747);
+}
+
+/* ========================
+    Slidebar
+======================== */
+
+.slidebar {
+  width: var(--width);
+  margin: var(--margin);
+}
+
+.banner {
+  position: relative;
+}
+.banner-content {
+  position: absolute;
+  bottom: 0px;
+  width: 220px;
+  height: 75px;
+  background-color: #404040;
+  font-family: var(--font-family-bebas);
+}
+
+.banner-content__1 {
+  padding: 13px 0px 0px 10px;
+  color: #9a9a9a;
+  font-size: 14px;
+}
+
+.banner-content__2 {
+  font-size: 28px;
+  color: #fff;
+  text-align: center;
+}
+
+.angle-up {
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+}
+
+.down-content {
+  background-image: url("/Images/content_slider.png");
+}
+.down-content__title {
+  font-family: var(--font-family-bebas);
+  font-size: 16px;
+  padding: 20px 0 15px 15px;
+  color: var(--color5f5f5f);
+}
+.down-content__content {
+  font-family: var(--font-family-Helvetica);
+  color: var(--color474747);
+  font-size: 12px;
+  padding-left: 15px;
+}
+
+.next-slider {
+  position: absolute;
+  bottom: 10px;
+  right: 7px;
+  width: 120px;
+  height: 5px;
+  display: flex;
+  margin-right: 5px;
+}
+
+.next-slider__nocolor {
+  width: 25px;
+  background-color: #444444;
+}
+.next-slider__color {
+  width: 25px;
+  background-color: #fff;
+  margin-left: 8px;
+}
+
+/*===================
+ news
+ ====================
+ */
+
+.new {
+  width: var(--width);
+  margin: var(--margin);
+  margin-top: 60px;
+}
+
+.new-item__title {
+  font-size: 20px;
+  display: flex;
+  font-family: var(--font-family-bebas);
+  align-items: flex-end;
+  margin-left: 5px;
+}
+.new-item__title span {
+  margin-left: 30px;
+  line-height: 20px;
+  color: var(--color464646);
+}
+
+.new-item__content {
+  margin-top: 30px;
+  font-size: 12px;
+  font-family: var(--font-family-Helvetica);
+  color: var(--color5f5f5f);
+}
+
+.new-item__find {
+  margin-top: 20px;
+  font-family: var(--font-family-bebas);
+}
+.new-item__find a {
+  margin-left: 10px;
+  color: var(--color474747);
+}
+/* ===============
+title on card 
+================== */
+.title-top {
+  width: var(--width);
+  margin: var(--margin);
+  background-image: url("/Images/background_title.png");
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.title-top__background {
+  width: 180px;
+  background-color: #fff;
+  text-align: center;
+}
+.title-top span {
+  font-size: 18px;
+  font-family: var(--font-family-bebas);
+  color: var(--color474747);
+}
+
+/* ===============
+card
+================== */
+.card {
+  width: var(--width);
+  margin: var(--margin);
+  margin-top: 50px;
+  border: none;
+}
+
+.card-item__title {
+  margin: 20px 0 10px 0;
+  font-size: 18px;
+  font-family: var(--font-family-bebas);
+  color: var(--color464646);
+}
+
+.card-item__content {
+  font-size: 12px;
+  font-family: var(--font-family-Helvetica);
+  color: var(--color5f5f5f);
+}
+
+.card-item__find {
+  margin-top: 20px;
+  font-family: var(--font-family-bebas);
+}
+.card-item__find a {
+  margin-left: 10px;
+  color: var(--color474747);
+}
+
+/* ====================
+footer end card
+=======================*/
+
+.footer-end {
+  background-image: url("/Images/background_end.png");
+  height: 10px;
+  margin-top: 70px;
+}
+
+/*=============
+footer
+================*/
+
+footer {
+  background-image: url("/Images/footer.png");
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  color: var(--colorbdbdbd);
+  height: 70px;
+  align-items: center;
+}
+
+footer div > span {
+  color: var(--color464646);
+}
